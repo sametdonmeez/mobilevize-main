@@ -5,6 +5,7 @@ import 'guest_book_message.dart';
 import 'src/widgets.dart';
 
 class GuestBook extends StatefulWidget {
+  // Modify the following line:
   const GuestBook({
     super.key, 
     required this.addMessage, 
@@ -12,10 +13,10 @@ class GuestBook extends StatefulWidget {
   });
 
   final FutureOr<void> Function(String message) addMessage;
-  final List<GuestBookMessage> messages;
+  final List<GuestBookMessage> messages; // new
 
   @override
-  State<GuestBook> createState() => _GuestBookState();
+  _GuestBookState createState() => _GuestBookState();
 }
 
 
@@ -79,4 +80,5 @@ class _GuestBookState extends State<GuestBook> {
       // ...to here.
     );
   }
-}
+} 
+

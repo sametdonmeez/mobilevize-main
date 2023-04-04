@@ -19,8 +19,8 @@ class HomePage extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
-          Image.asset('assets/codelab.png'),
-          const SizedBox(height: 8),
+          Image.asset('assets/codel.png'),
+          const SizedBox(height: 1),
           const IconAndDetail(Icons.calendar_today, 'October 30'),
           const IconAndDetail(Icons.location_city, 'İstanbul'),
           Consumer<ApplicationState>(
